@@ -7,7 +7,8 @@ class Program
         
         
         //Console.Write("What is the magic number?");
-        //int number = int.Parse(Console.ReadLine());
+        //string smart = Console.ReadLine();
+        //int number = int.Parse(smart);
 
         Random randomGenerator = new Random();
         int number = randomGenerator.Next(1, 100);
@@ -17,7 +18,8 @@ class Program
         while (number != guess)
         {
             Console.Write("What is your guess?");
-            guess = int.Parse(Console.ReadLine());
+            string answer = Console.ReadLine();
+            guess = int.Parse(answer);
 
             if (number > guess)
             {
