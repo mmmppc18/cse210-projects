@@ -7,11 +7,15 @@ class Program
 
         DisplayWelcome();
 
-        PromptUserName();
-        PromptUserNumber();
-        PromptUserBirthYear();
-        SquareNumber();
-        DisplayResult();
+        string name = PromptUserName();
+        int number = PromptUserNumber();
+
+        int square = SquareNumber(number);
+        int birthYear;
+        PromptUserBirthYear(out birthYear);
+
+
+        DisplayResult(name, square, birthYear);
 
 
         Console.WriteLine("Hello Learning05 World!");
@@ -36,8 +40,22 @@ class Program
         return number;
     }
 
-    
+    static void PromptUserBirthYear(out int birthYear)
+    {
+        Console.WriteLine($"Please enter the year you were born: ");
+        birthYear = int.Parse(Console.ReadLine());
+    }
 
+    static int SquareNumber(int number)
+    {
+        int root = number ^ 2;
 
+        return root;
+    }
 
+    static void DisplayResult(string name, int root, int birthYear)
+    {
+        Console.WriteLine($"{name}, the square of your number is {root}.");
+        Console.WriteLine($"{name}, you till turn {2026 - birthYear} years old this year.");
+    }
 }
