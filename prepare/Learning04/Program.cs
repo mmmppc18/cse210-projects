@@ -26,12 +26,13 @@ class Program
         {
             sum += number;
         }
-        Console.Write($"The sum is {sum}.");
+        Console.WriteLine($"The sum is {sum}.");
 
 
         //Return the average of the numbers on the list
         float average = ((float)sum)/numbers.Count;
         Console.WriteLine($"The average is {average}.");
+        
 
     }
 
