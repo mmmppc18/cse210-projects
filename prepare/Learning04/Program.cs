@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 class Program
 {
@@ -31,13 +30,13 @@ class Program
 
 
         //Return the average of the numbers on the list
-        float average = ((float)sum)/numbers.Count;
+        float average = ((float)sum) / numbers.Count;
         Console.WriteLine($"The average is {average}.");
-        
+
         //return the max number
 
-        int max =numbers[0];
-        
+        int max = numbers[0];
+
         foreach (int number in numbers)
         {
             if (number > max)
