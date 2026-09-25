@@ -17,8 +17,6 @@ class Program
 
         DisplayResult(name, square, birthYear);
 
-
-        Console.WriteLine("Hello Learning05 World!");
     }
     static void DisplayWelcome()
     {
@@ -48,14 +46,14 @@ class Program
 
     static int SquareNumber(int number)
     {
-        int root = number ^ 2;
+        int squared = number * number;
 
-        return root;
+        return squared;
     }
 
-    static void DisplayResult(string name, int root, int birthYear)
+    static void DisplayResult(string name, int squared, int birthYear)
     {
-        Console.WriteLine($"{name}, the square of your number is {root}.");
-        Console.WriteLine($"{name}, you till turn {2026 - birthYear} years old this year.");
+        Console.WriteLine($"{name}, the square of your number is {squared}.");
+        Console.WriteLine($"{name}, you will turn {2026 - birthYear} years old this year.");
     }
 }
