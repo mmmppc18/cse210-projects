@@ -17,7 +17,7 @@ class Program
         job2._endYear = 2015;
 
         Resume myResume = new Resume();
-        myResume._name ="Champion Lore";
+        myResume._name = "Champion Lore";
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
